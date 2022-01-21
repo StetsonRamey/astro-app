@@ -3,6 +3,7 @@ import MainHead from '../components/MainHead.astro';
 import Button from '../components/Button.svelte';
 import Footer from '../components/Footer.svelte';
 import Nav from '../components/Nav.svelte';
+import QuickDeets from '../components/QuickDeets.svelte';
 
 const { content } = Astro.props;
 ---
@@ -23,6 +24,11 @@ const { content } = Astro.props;
 				align-items: center;
 				justify-content: center;
 			}
+
+      .infoCard {
+        background-color: var(--c-gray);
+        border-radius: 20px 40px;
+      }
 
 			.tag {
 				margin-left: 0.5em;
@@ -78,6 +84,9 @@ const { content } = Astro.props;
 				<h3 class="tagline">{content.description}</h3>
 			</div>
 		</div>
+    <div class="wrapper wrapper__readable infoCard pt4 pb4">
+      <QuickDeets {content}/>
+    </div>
 		<div class="wrapper wrapper__readable">
 			<div class="content"><slot /></div>
 		</div>

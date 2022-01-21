@@ -6,6 +6,16 @@ publishDate: 2022-21-01 00:00:00
 img: ../../../public/assets/tts-shot.png
 description: |
   A holiday lighting company my business partner and I started in 2016.
+stack:
+    Static, raw coded HTML, Sass, and a hint of JS (for the mobile menu and the form). There is not build tool, I did
+    everything with NPM Scripts. I added Tailwind last year to quickly scaffold out on the fly pages.
+purpose:
+    Get ranked for local search. Take in leads and feed them directly to our Airtable DB. Uses a Netlify form for
+    contact page. We process about 600 requests a season.
+backend:
+    Airtable DB so I can interact with it through code and team can interact through Airtable App. I’ve built many
+    automations (invoice creation, text notifications, etc...) either directly with webhooks and JS in Airtable or with
+    PipeDream and NodeJS.
 tags:
   - design
   - front end website
