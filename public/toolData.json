@@ -1,0 +1,46 @@
+{
+  "Tis the Season Holiday Lighting": [
+    {
+      "name": "PipeDream",
+      "url": "https://pipedream.com/"
+    },
+    {
+      "name": "Airtable",
+      "url": "https://www.airtable.com/"
+    },
+    {
+      "name": "TextMagic API",
+      "url": "https://www.textmagic.com/docs/api/"
+    },
+    {
+      "name": "Quickbooks API",
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account"
+    },
+    {
+      "name": "CompanyCam API",
+      "url": "https://companycam.com/"
+    }
+  ],
+  "Great Plains Painting": [
+    {
+      "name": "PipeDream",
+      "url": "https://pipedream.com/"
+    },
+    {
+      "name": "Airtable",
+      "url": "https://www.airtable.com/"
+    },
+    {
+      "name": "Quickbooks API",
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account"
+    },
+    {
+      "name": "CompanyCam API",
+      "url": "https://companycam.com/"
+    },
+    {
+      "name": "SendInBlue",
+      "url": "https://www.sendinblue.com/"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ import PortfolioPreview from '../components/PortfolioPreview.svelte';
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = Astro.fetchContent('./project/**/*.md');
-const featuredProject = projects[0];
+const featuredProject = projects.find(project => project.title === 'Tis the Season Holiday Lighting')
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/

@@ -4,9 +4,9 @@
 
 <div class="card">
     <div class="titleCard" style="background-image:url({project.img})">
-        <h1 class="title">{project.title}</h1>
     </div>
     <div class="pa3">
+        <h1 class="title">{project.title}</h1>
         <p class="desc mt0 mb2">{project.description}</p>
         <div class="tags">
             Tagged:
@@ -30,16 +30,9 @@
         border: 1px solid #f0f0f0;
     }
     .title {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin: 0;
+        padding-bottom: 2rem;
         color: white;
-        flex-direction: column;
         font-size: var(--f-u4);
         font-weight: 900;
         text-transform: uppercase;

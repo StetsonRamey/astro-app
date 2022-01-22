@@ -4,6 +4,7 @@ title: Tis the Season Holiday Lighting
 client: Self
 publishDate: 2022-21-01 00:00:00
 img: ../../../public/assets/tts-shot.png
+site: https://tistheseasonkc.com/
 description: |
   A holiday lighting company my business partner and I started in 2016.
 stack:
