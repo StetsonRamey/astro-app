@@ -42,5 +42,25 @@
       "name": "SendInBlue",
       "url": "https://www.sendinblue.com/"
     }
+  ],
+  "How 2 Javascript": [
+    {
+      "name": "Eleventy",
+      "url": "https://www.11ty.dev"
+    },
+    {
+      "name": "Tailwind CSS",
+      "url": "https://www.11ty.dev"
+    }
+  ],
+  "Reliance Siding": [
+    {
+      "name": "Eleventy",
+      "url": "https://www.11ty.dev"
+    },
+    {
+      "name": "Tailwind CSS",
+      "url": "https://www.11ty.dev"
+    }
   ]
 }

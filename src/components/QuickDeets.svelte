@@ -2,6 +2,7 @@
   export let content;
   import * as tools from "../../public/toolData.json";
 
+  // this could definitely be cleaned up, but for the sake of getting this submitted I got it working and left it.
   const projects = Object.keys(tools.default)
   const tool = projects.find(t => t === content.title)
   const used = tools.default[tool]
