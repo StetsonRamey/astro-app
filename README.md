@@ -11,10 +11,10 @@ I can pass data around in Astro just like I've done in 11ty, and you've got Vite
 
 I have 2 jobs currently
 
-[Great Plains Painting]()<br>
+[Great Plains Painting](https://greatplainspaintingkc.com/)<br>
 *I started this company in 2015 and sold it in 2019 so that my girlfiend and I could move closer to her family in CA.  I still help with technology related things and high level business functions*
 
-[Tis the Season Holiday Lighting]()<br>
+[Tis the Season Holiday Lighting](https://tistheseasonkc.com/)<br>
 *I started this company with a partner in 2016.  We operate seasonally (only around Christmas for a few months).  I do all the technology related functions and in the field installing of the holiday lights with my team*
 
 ## Why I'd like to work for Astro
