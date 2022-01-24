@@ -17,12 +17,42 @@ tags:
   - back end tools and automation
 ---
 
-Rubber cheese mascarpone cut the cheese. Jarlsberg parmesan cheesy grin cream cheese port-salut stinking bishop ricotta brie. Roquefort when the cheese comes out everybody's happy goat cheese triangles stilton cheese and biscuits goat babybel. Bocconcini roquefort queso danish fontina pecorino.
+I didn't build this site, an agency did.  It's a Wordpress site built with the Elementor builder.  I don't hate it, but I don't love it.  We paid the agency $10k for it and I'd made my goals for SEO very clear.  They didn't deliver on my expectations and I decided last year to part ways with them and rebuild the site myself this year (2022).  I planned to run it in 11ty, but then Astro happened and I plan to rebuild the site with a fresh design with Astro!
 
-Smelly cheese stinking bishop roquefort. Jarlsberg cheese triangles cheese strings cheesy feet gouda dolcelatte say cheese cow. Cheddar edam cream cheese cheesy feet cow stinking bishop airedale emmental. Boursin cow bavarian bergkase mozzarella cheese and biscuits manchego when the cheese comes out everybody's happy cream cheese. Cheese on toast st. agur blue cheese croque monsieur halloumi.
+Even though I didn't build the site, I do build some "back-end" tools for Great Plains Painting via [Airtable](https://www.airtable.com/) and [PipeDream](https://pipedream.com/).
 
-Fromage frais jarlsberg st. agur blue cheese. Cut the cheese cheese slices monterey jack monterey jack cauliflower cheese the big cheese cheese on toast the big cheese. Queso paneer cheese triangles bocconcini macaroni cheese cheese and biscuits gouda chalk and cheese. Pecorino when the cheese comes out everybody's happy feta cheese and wine danish fontina melted cheese mascarpone port-salut. When the cheese comes out everybody's happy pecorino cottage cheese.
+We used to use lots of different tools that didn't talk to each other and various data lived in separate places.  This sucked for every and in 2020 I decided to see what I could do about it.  The idea was to put all data in a central tool - Airtalbe - and to kill all the tools we could and the ones we couldn't feed the data from Airtable.
 
-Caerphilly parmesan manchego. Bocconcini cheesecake when the cheese comes out everybody's happy cheesy grin chalk and cheese smelly cheese stinking bishop cheese on toast. Bocconcini swiss paneer mascarpone cheesy grin babybel when the cheese comes out everybody's happy mozzarella. Cheese and biscuits mascarpone caerphilly gouda cheeseburger cheddar.
+### An Example:
 
-Cheese and biscuits cheesy grin roquefort. Ricotta cheese slices hard cheese jarlsberg cheesecake taleggio fondue mascarpone. Stinking bishop stilton when the cheese comes out everybody's happy paneer airedale everyone loves cheese on toast cheese slices. Ricotta cut the cheese cheese triangles babybel cream cheese ricotta.
+Before a new lead workflow looked like this:
+
+Contact form submission --><br>
+email sent to Angela --><br>
+Angela manually enters info in Google Sheet --><br>
+Angela calls / schedules appt in [YCBM](https://youcanbook.me/) --><br>
+YCBM automatically updates estimator calender --><br>
+Estimator creates project in [CompanyCam](https://companycam.com) --><br>
+...and there's a couple more steps but this is sufficient for this example
+
+This of course worked for years, but if we wanted to update an appointment we had to do it in YCBM and our estimators had to create the project everytime in CompanyCam.
+
+So I built this: https://pipedream.com/@stetsonramey/custom-schedule-workflow-p_xMCa7Wk
+
+Now all data lives in Airtable.  When a contact form submission happens, it goes straight to Airtable and Angela gets a notification.  She calls the potential customer and schedules the time, directly in Airtable.  The pipedream workflow adds the appointments to Google Calendar for everyone.  If the appointment needs updated, we can do it in Google Cal or in Airtable.  Other workflows get triggered to send a reminder 24hours before the appointment.  Another workflow creates the project in CompanyCam so the estimator no longer has to manually.
+
+Through interacting with the various APIs available (airtable/google cal/companycam) I eliminated a couple manual steps and made it so that Angela only interacts with one interface - Airtable's.
+
+The team loves it, and I get a little more control over what happens where and how.
+
+### What I learned
+
+I'd never interacted with APIs much before this -- except the standard tutorial stuff like the Pokemon DB, Movies, Weather...
+
+I got up to speed on NodeJS pretty quick.  And learned how to scour docs and make sense of what needed to happen to get the data I wanted.  Once I figured that out I'd simplify the code and test the requests on Postman or via the apps playground if they have one.  When I was satisfied that I was getting or sending the data I wanted, I'd scaffold it out in Pipedream and debug it.
+
+The most difficult thing for me to learn was Async/Await.  At first I impatiently tried to just jam "awaits" in the code to see if I could get it running, but when that quickly didn't work I read up a bit.  Pipedream has a [pretty detailed doc section](https://pipedream.com/docs/workflows/steps/code/async/) on it and that was helpful.  Once I understood where I needed Node to wait on the data I needed before moving on things got easier.  Sometimes I still get tripped up, but when I look at async code this year I'm amazed how differently I feel about it than I did at this time last year.
+
+### What I want to do next
+
+Rebuild the website with Astro...obviously.  Another item is that we use Quickbooks Payments to process electronic payments from customers.  Quickbooks is a fine accounting platform, but their payments setup is less than desirable for me.  This year, I'd like to switch payments over to Stripe and interact with their API.  I believe it's possible for me to build a little app right inside Airtable to create/send custom invoices inside Airtable without having to login to Stripe.  That's the idea anyway.
