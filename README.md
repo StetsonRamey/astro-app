@@ -7,7 +7,7 @@ I decided to create something with Astro to apply.  I'm glad that I did because 
 I can pass data around in Astro just like I've done in 11ty, and you've got Vite!  It's great.
 
 ## What I'm doing now
----
+
 
 I have 2 jobs currently
 
@@ -18,7 +18,7 @@ I have 2 jobs currently
 *I started this company with a partner in 2016.  We operate seasonally (only around Christmas for a few months).  I do all the technology related functions and in the field installing of the holiday lights with my team*
 
 ## Why I'd like to work for Astro
----
+
 
 I'd like to move away from all functions for Great Plains Painting and on to something 100% technology focused.  I've come along way teaching myself how to code, but I could move faster if my work is focused on it and I worked with people I could get support from.
 
