@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Reliance Siding
 client: Self
 publishDate: 2022-20-01 00:00:00
-img: ../../../public/assets/reliance.png
+img: /assets/reliance.png
 description: |
   I set this website up last year for a branch off of the painting company I used to own.  We launched and tested it, and ultimately ended up advertising the siding portion of the business through the painting company becuase it converted better on adwords.  But I've kept the site up because we may use it in the future and I didn't want to have to start from scratch again.
 site: https://reliancesiding.com
